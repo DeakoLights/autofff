@@ -1,6 +1,6 @@
-import autofff.utils as utils
-import autofff.config as c
-from autofff.config import CONFIG
+import utils as utils
+import config as c
+from config import CONFIG
 
 from abc import ABCMeta, abstractmethod
 import logging

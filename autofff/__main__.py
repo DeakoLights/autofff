@@ -3,11 +3,10 @@ import logging
 import os.path
 import sys
 
-import autofff
-import autofff.scanner as scanner
-import autofff.generator as generator
-import autofff.config as c
-from autofff.config import CONFIG
+import scanner as scanner
+import generator as generator
+import config as c
+from config import CONFIG
 
 SCANNER_TYPES = {
 	c.GCC_HEADER_SCANNER_TYPE: lambda *args, **kwargs: scanner.GCCHeaderScanner(*args, **kwargs),
@@ -75,7 +74,7 @@ def main()->None:
 	parser.add_argument('--version',
 		help="Print version info",
 		action='version',
-		version=f"%(prog)s {autofff.__version__}")
+		version=f"%(prog)s devel")
 	args = parser.parse_args()
 
 	logging.basicConfig(level=args.logLevel)

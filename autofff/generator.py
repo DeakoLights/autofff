@@ -1,7 +1,7 @@
-import autofff.utils as utils
-import autofff.scanner as scanner
-import autofff.config as c
-from autofff.config import CONFIG
+import utils as utils
+import scanner as scanner
+import config as c
+from config import CONFIG
 
 from abc import ABC, abstractmethod
 import io
