@@ -2,8 +2,7 @@ import logging
 import sys
 
 from configobj import ConfigObj
-from validate import Validator
-import validate
+from configobj.validate import Validator
 
 LOGGER = logging.getLogger(__name__)
 
